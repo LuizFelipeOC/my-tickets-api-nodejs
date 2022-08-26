@@ -1,4 +1,5 @@
 import { Router } from "express";
+import AuthenticatorController from "../controllers/authenticator/AuthenticatorController";
 import CreateUserController from "../controllers/CreateUser/CreateUserController";
 // import ensureAuth from "../middleware/ensureAuthenticate";
 // import getAllHeroesController from "../UseCases/all_heroes/getAllHeroesController";
@@ -7,7 +8,7 @@ import CreateUserController from "../controllers/CreateUser/CreateUserController
 const routes = Router();
 
 routes.post("/createAccount", CreateUserController.createUser);
-// routes.post("/loginAccount", AuthenticateController.Authenticate);
+routes.post("/loginAccount", AuthenticatorController.authenticate);
 
 // routes.get("/allHeroes", ensureAuth, getAllHeroesController.getHeroes);
 

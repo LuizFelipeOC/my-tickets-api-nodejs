@@ -68,7 +68,7 @@ class CreateUserController {
     const hash = await bcrypt.hash(body.password, 10);
 
     const userCreated = await CreateUserSchema.create({
-      usernmae: body.username,
+      username: body.username,
       email: body.email,
       admin: body.admin,
       telefone: body.telefone ?? "",
@@ -77,7 +77,7 @@ class CreateUserController {
 
     return res.status(201).json({
       message: "Usuário criado com sucesso",
-      username: userCreated.usernmae,
+      username: userCreated.username,
       userId: userCreated.id,
       admin: userCreated.admin,
     });

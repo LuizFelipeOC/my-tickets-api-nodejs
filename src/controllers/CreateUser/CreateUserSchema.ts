@@ -1,7 +1,7 @@
 import { model, Schema, Document } from "mongoose";
 
 interface ICreateUser extends Document {
-  usernmae: string;
+  username: string;
   email: string;
   password: string;
   telefone: string;
