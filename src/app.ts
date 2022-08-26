@@ -10,8 +10,8 @@ class App {
 
   public constructor() {
     this.express = express();
-    this.mongoCloudDatabase();
     this.middlewares();
+    this.mongoCloudDatabase();
     this.routes();
   }
 
