@@ -1,5 +1,6 @@
 import { Router } from "express";
 import AuthenticatorController from "../controllers/authenticator/AuthenticatorController";
+import CreatedTicketController from "../controllers/CreatedTicket/CreatedTicketController";
 import CreateUserController from "../controllers/CreateUser/CreateUserController";
 import ensureAuth from "../middleware/EnsuredToken";
 // import ensureAuth from "../middleware/ensureAuthenticate";
@@ -11,7 +12,7 @@ const routes = Router();
 routes.post("/createAccount", CreateUserController.createUser);
 routes.post("/loginAccount", AuthenticatorController.authenticate);
 
-routes.post("/createdPost", ensureAuth);
+routes.post("/createdPost", ensureAuth, CreatedTicketController.createdTicket);
 
 // routes.get("/allHeroes", ensureAuth, getAllHeroesController.getHeroes);
 
