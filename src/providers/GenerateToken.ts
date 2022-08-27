@@ -9,7 +9,7 @@ class TokenGenerate {
 
     const token = sign({}, authConfig.secret, {
       subject: username,
-      expiresIn: 200,
+      expiresIn: 84600,
     });
 
     return token;
