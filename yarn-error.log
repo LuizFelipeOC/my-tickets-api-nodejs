@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\luizf\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add jsonwebtoken dont-env -safe
+  C:\Program Files\nodejs\node.exe C:\Users\luizf\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/cryto
 
 PATH: 
-  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\flutter\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\openjdk-11.0.16_8\bin;C:\Android\sdk\emulator;C:\Android\sdk\tools;C:\Android\sdk\tools\bin;C:\Android\sdk\platform-tools;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\luizf\AppData\Local\Pub\Cache\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\luizf\AppData\Local\Microsoft\WindowsApps;C:\Users\luizf\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luizf\AppData\Roaming\npm;C:\Users\luizf\AppData\Roaming\Composer\vendor\bin
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\flutter\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\openjdk-11.0.16_8\bin;C:\Android\sdk\emulator;C:\Android\sdk\tools;C:\Android\sdk\tools\bin;C:\Android\sdk\platform-tools;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\luizf\AppData\Local\Pub\Cache\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\luizf\AppData\Local\Microsoft\WindowsApps;;C:\Users\luizf\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luizf\AppData\Roaming\npm;C:\Users\luizf\AppData\Roaming\Composer\vendor\bin
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/dont-env: Not found
+  Error: https://registry.yarnpkg.com/@types%2fcryto: Not found
       at Request.params.callback [as _callback] (C:\Users\luizf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
       at Request.self.callback (C:\Users\luizf\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:527:28)
@@ -46,6 +46,7 @@ npm manifest:
       "@types/mongoose": "^5.11.97",
       "bcrypt": "^5.0.1",
       "cors": "^2.8.5",
+      "crypto": "^1.0.1",
       "dotenv": "^16.0.1",
       "eslint": "^8.0.1",
       "express": "^4.18.1",
@@ -646,6 +647,11 @@ Lockfile:
       path-key "^3.1.0"
       shebang-command "^2.0.0"
       which "^2.0.1"
+  
+  crypto@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
+    integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
   
   debug@2.6.9, debug@^2.6.9:
     version "2.6.9"
