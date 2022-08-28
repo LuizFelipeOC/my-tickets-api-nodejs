@@ -3,6 +3,7 @@ import AuthenticatorController from "../controllers/authenticator/AuthenticatorC
 import CreatedTicketController from "../controllers/CreatedTicket/CreatedTicketController";
 import CreateUserController from "../controllers/CreateUser/CreateUserController";
 import DeleteTicketController from "../controllers/DeleteTicket/DeleteTicketController";
+import UpdateTicketController from "../controllers/UpdateTicket/UpdateTicketController";
 import ensureAuth from "../middleware/EnsuredToken";
 // import ensureAuth from "../middleware/ensureAuthenticate";
 // import getAllHeroesController from "../UseCases/all_heroes/getAllHeroesController";
@@ -15,6 +16,8 @@ routes.post("/loginAccount", AuthenticatorController.authenticate);
 
 routes.post("/createdPost", ensureAuth, CreatedTicketController.createdTicket);
 routes.delete("/deletePost", ensureAuth, DeleteTicketController.deleteTicket);
+
+routes.put("/updatePost", ensureAuth, UpdateTicketController.updateTicket);
 
 // routes.get("/allHeroes", ensureAuth, getAllHeroesController.getHeroes);
 
