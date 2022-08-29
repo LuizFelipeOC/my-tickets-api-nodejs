@@ -1,6 +1,7 @@
 import { Router } from "express";
 import AuthenticatorController from "../controllers/authenticator/AuthenticatorController";
 import CreatedTicketController from "../controllers/CreatedTicket/CreatedTicketController";
+import CreateAnwser from "../controllers/CreateResposta/CreateAnwser";
 import CreateUserController from "../controllers/CreateUser/CreateUserController";
 import DeleteTicketController from "../controllers/DeleteTicket/DeleteTicketController";
 import UpdateTicketController from "../controllers/UpdateTicket/UpdateTicketController";
@@ -19,6 +20,6 @@ routes.delete("/deletePost", ensureAuth, DeleteTicketController.deleteTicket);
 
 routes.put("/updatePost", ensureAuth, UpdateTicketController.updateTicket);
 
-// routes.get("/allHeroes", ensureAuth, getAllHeroesController.getHeroes);
+routes.post("/anwser", ensureAuth, CreateAnwser.createAnwser);
 
 export default routes;
